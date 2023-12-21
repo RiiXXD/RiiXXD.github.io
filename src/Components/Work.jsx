@@ -56,12 +56,18 @@ spaces for categorizing tasks, including
   <Divider />
   <CardFooter>
     <ButtonGroup spacing='2'>
+      <Link href="https://github.com/RiiXXD/CheckMate" isExternal>
       <Button variant='solid' bg="#c1d37f">
        Code
       </Button>
+      </Link>
+      <Link href="https://6513f6382d6dfc7b8a98e8cc--eloquent-maamoul-0c12bd.netlify.app/" isExternal>
+
       <Button variant='ghost' color="#c1d37f">
        Live
       </Button>
+      </Link>
+
     </ButtonGroup>
   </CardFooter>
 </Card>

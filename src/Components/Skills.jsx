@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {  Box, Flex, Link, Text, Button, Image, Heading, Stack, keyframes} from "@chakra-ui/react";
+import {  Box, Flex, Text, Image, Heading, Stack, keyframes} from "@chakra-ui/react";
 import { motion } from 'framer-motion';
 
 export default function Skill(){
@@ -26,25 +26,25 @@ const animation = `${animationKeyframes} 2s ease-in-out infinite`;
         <Flex flexDir="column" align="flex-end"  color="white" >
 <Flex align="center" justify="center" gap="1.2em">
          <Stack>
-         <Image src="html.png" w={["35px","50px","60px","70px"]}  as={motion.img}
-         animation={animation}></Image><Text align="center">HTML</Text>
+         <Image className='skills-card-img'src="html.png" w={["35px","50px","60px","70px"]}  as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name' align="center">HTML</Text>
 
          </Stack>
          <Stack align="center">
-         <Image src="js.png" w={["35px","50px","60px","70px"]} as={motion.img}
-         animation={animation}></Image><Text>javaScript</Text>
+         <Image className='skills-card-img' src="js.png" w={["35px","50px","60px","70px"]} as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name'>javaScript</Text>
          </Stack>
          <Stack>
          <Image src="css-3.png" w="70px" as={motion.img}
-         animation={animation}></Image><Text align="center">CSS</Text>
+         animation={animation}></Image><Text className='skills-card-name' align="center">CSS</Text>
          </Stack>
          <Stack>
-         <Image src="java.png" w="70px" as={motion.img}
-         animation={animation}></Image><Text align="center">Java</Text>
+         <Image className='skills-card-img' src="java.png" w="70px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name' align="center">Java</Text>
          </Stack>
          <Stack>
-         <Image src="node.png" w="90px" as={motion.img}
-         animation={animation}></Image><Text align="center">Node js</Text>
+         <Image className='skills-card-img' src="node.png" w="90px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name' align="center">Node js</Text>
          </Stack>
 {/* <Text>Redux</Text>
 <Text>Express</Text>
@@ -53,40 +53,40 @@ const animation = `${animationKeyframes} 2s ease-in-out infinite`;
 </Flex>
 <Flex justify="center" gap="30px" align="flex-end">
   <Stack>
-         <Image src="react.png" w="80px" as={motion.img}
-         animation={animation}></Image><Text align="center">React</Text>
+         <Image className='skills-card-img' src="react.png" w="80px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name' align="center">React</Text>
          </Stack>
          <Stack>
-         <Image src="redux.png" w="80px" as={motion.img}
-         animation={animation}></Image><Text>Redux</Text>
+         <Image className='skills-card-img' src="redux.png" w="80px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name'>Redux</Text>
          </Stack>
          <Stack>
-         <Image src="chakra.png" w="75px" as={motion.img}
-         animation={animation}></Image><Text>Chakra</Text>
+         <Image className='skills-card-img'src="chakra.png" w="75px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name'>Chakra</Text>
          </Stack>
          <Stack>
-         <Image src="github.png" w="80px" as={motion.img}
-         animation={animation}></Image><Text align="center">Git</Text>
+         <Image className='skills-card-img' src="github.png" w="80px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name' align="center">Git</Text>
          </Stack>
         </Flex>
 <Flex justify="center" gap="30px" align="flex-end">
   <Stack>
-         <Image src="express.png" w="80px" as={motion.img}
-         animation={animation}></Image><Text align="center">Express js</Text>
+         <Image className='skills-card-img' src="express.png" w="80px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name' align="center">Express js</Text>
          </Stack>
          <Stack>
-         <Image src="MongoDB.png" w="50px" as={motion.img}
-         animation={animation}></Image><Text>MongoDB</Text>
+         <Image className='skills-card-img' src="MongoDB.png" w="50px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name'>MongoDB</Text>
          </Stack>
          <Stack>
-         <Image src="firebase.png" w="50px" as={motion.img}
-         animation={animation}></Image><Text>FireBase</Text>
+         <Image className='skills-card-img' src="firebase.png" w="50px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name'>FireBase</Text>
          </Stack>
          </Flex>
          <Flex justify="center" gap="30px" align="flex-end">
   <Stack>
-         <Image src="figma.png" w="70px" as={motion.img}
-         animation={animation}></Image><Text align="center">Figma</Text>
+         <Image className='skills-card-img' src="figma.png" w="70px" as={motion.img}
+         animation={animation}></Image><Text className='skills-card-name' align="center">Figma</Text>
          </Stack>
          
         </Flex>

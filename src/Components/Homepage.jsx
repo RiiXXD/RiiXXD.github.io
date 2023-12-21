@@ -23,8 +23,8 @@ export default function HomePage(){
         {/* <Image src="HomePageImg.png" alt="flower"  /> */}
         <Heading  fontSize={["2em","3em","5em","6em"]} fontWeight="900" color="#c1d37f">Hey! I'm</Heading>
 
-        <Heading  fontSize={["3.5em","3.5em","8em","11.5em"]} fontWeight="900">Rishita</Heading>
-        <Heading fontSize={["3.5em","3.5em","8em","11.5em"]} fontWeight="900">Mukherjee</Heading>
+        <Heading  fontSize={["3.5em","3.5em","8em","9.5em"]} fontWeight="900">Rishita</Heading>
+        <Heading fontSize={["3.5em","3.5em","8em","9.5em"]} fontWeight="900">Mukherjee</Heading>
        </Flex>
 
       <Flex  justify="flex-end"  align="center" p={[" 0em 0em"," 0em 3em"," 0em 3em"," 0em 3em"]}>
