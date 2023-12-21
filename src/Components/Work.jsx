@@ -10,7 +10,8 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 export default function Work(){
     const controls = useAnimation();
-    const [ref, inView] = useInView();
+    
+    const [ref, inView] = useInView({ once: false });
     const squareVariants = {
         visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
         hidden: { opacity: 0, scale: 0 }
@@ -21,9 +22,15 @@ export default function Work(){
         }
       }, [controls, inView]);
     return <Box w="100%" id="projects"  >
-        <Heading as="h1"  fontSize={["2.5em","3em","5.5em"]}fontWeight="700"> Projects</Heading>
-        <Flex justify="space-between" ref={ref} p="3em 0em" flexDir={["column","column","column","row"]} align={["center","center","center","center"]}>
-<Card bg="#a61c3c" my="2em" color="wheat" as={motion.div} maxW='md'  variants={squareVariants}  animate={controls}
+        <Heading as="h1"  fontSize={["2.5em","3em","5.5em","5.5em"]}fontWeight="700"> Projects</Heading>
+        <Flex w="100%" flexWrap="wrap" justify="space-around" ref={ref} p="3em 0em" flexDir={["column","column","column","row"]} align={["center","center","center","center"]}>
+
+
+
+
+
+
+<Card className="project-card" bg="#a61c3c"  color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
       initial="hidden">
   <CardBody>
     <Image
@@ -32,15 +39,15 @@ export default function Work(){
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>CheckMate</Heading>
-      <Text>
+      <Heading size='md' className="project-title">CheckMate</Heading>
+      <Text className="project-description">
       visually appealing user interface.
 Incorporated user authentication for
 secure access. Implemented distinct
 spaces for categorizing tasks, including
 'Personal' and 'Work' sections.
       </Text>
-      <Flex justify="space-around" my="2em" >
+      <Flex className="project-tech-stack" justify="space-around" my="2em" >
     <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
     <FaReact fontSize="3.5em"  />
 <Text fontSize="1em">React</Text>
@@ -56,12 +63,12 @@ spaces for categorizing tasks, including
   <Divider />
   <CardFooter>
     <ButtonGroup spacing='2'>
-      <Link href="https://github.com/RiiXXD/CheckMate" isExternal>
+      <Link href="https://github.com/RiiXXD/CheckMate" className="project-github-link" isExternal>
       <Button variant='solid' bg="#c1d37f">
        Code
       </Button>
       </Link>
-      <Link href="https://6513f6382d6dfc7b8a98e8cc--eloquent-maamoul-0c12bd.netlify.app/" isExternal>
+      <Link href="https://6513f6382d6dfc7b8a98e8cc--eloquent-maamoul-0c12bd.netlify.app/" className="project-deployed-link" isExternal>
 
       <Button variant='ghost' color="#c1d37f">
        Live
@@ -71,7 +78,7 @@ spaces for categorizing tasks, including
     </ButtonGroup>
   </CardFooter>
 </Card>
-<Card bg="#5b2aec" my="2em" color="wheat" as={motion.div} maxW='md'  variants={squareVariants}  animate={controls}
+<Card className="project-card" bg="#5b2aec" my="2em" color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
       initial="hidden">
   <CardBody>
     <Image
@@ -80,15 +87,16 @@ spaces for categorizing tasks, including
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>Gem-Garden</Heading>
-      <Text>
+      <Heading size='md' className="project-title">Gem-Garden</Heading>
+      <Text className="project-description">
       Explore the exquisite world 
       of Gem Garden, an online jewelry
        website where you can effortlessly
         purchase the jewelry of your choice 
         from the comfort of your home.
+        Visit now.
       </Text>
-      <Flex justify="space-around" my="2em" >
+      <Flex className="project-tech-stack" justify="space-around" my="2em" >
      <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
      <FaReact fontSize="3.5em" />
  <Text fontSize="1em">React</Text>
@@ -105,13 +113,13 @@ spaces for categorizing tasks, including
   <Divider />
   <CardFooter>
     <ButtonGroup spacing='2'>
-    <Link href="https://github.com/Saurav9284/Unite-6-Project-Gem-Garden" isExternal>
+    <Link href="https://github.com/Saurav9284/Unite-6-Project-Gem-Garden" className="project-github-link" isExternal>
 
-      <Button variant='solid' bg="#c1d37f">
+      <Button variant='solid' bg="#c1d37f" >
        Code
       </Button>
       </Link>
-      <Link href="https://saurav01gemgarden.netlify.app" isExternal>
+      <Link href="https://saurav01gemgarden.netlify.app" className="project-deployed-link" isExternal>
 
       <Button variant='ghost' color="#c1d37f">
        Live
@@ -120,8 +128,8 @@ spaces for categorizing tasks, including
     </ButtonGroup>
   </CardFooter>
 </Card>
-<Card bg="#b0228c" my="2em" color="wheat" as={motion.div} maxW='md'  variants={squareVariants}  animate={controls}
-      initial="hidden">
+<Card  bg="#b0228c" my="2em" color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
+   className="project-card"   initial="hidden">
   <CardBody>
     <Image
       src="Myntra1.png"
@@ -129,8 +137,8 @@ spaces for categorizing tasks, including
       borderRadius='lg'
     />
     <Stack mt='6' spacing='3'>
-      <Heading size='md'>Myntra</Heading>
-      <Text>
+      <Heading size='md' className="project-title">Myntra</Heading>
+      <Text className="project-description">
       Myntra is a stylish 
       and user-centric e-commerce
      platform that brings the latest
@@ -160,13 +168,66 @@ spaces for categorizing tasks, including
   <Divider />
   <CardFooter>
     <ButtonGroup spacing='2'>
-    <Link href="https://github.com/MridulKatara/potent-toothbrush-7925" isExternal>
+    <Link href="https://github.com/MridulKatara/potent-toothbrush-7925" className="project-github-link" isExternal>
+
+      <Button variant='solid' bg='#c1d37f'  >
+       Code
+      </Button>
+      </Link>
+      <Link href="https://650b2f84de1078243d876e0c--effervescent-tulumba-71b6b7.netlify.app/" className="project-deployed-link" isExternal>
+
+      <Button variant='ghost' color='#c1d37f'>
+       Live
+      </Button>
+      </Link>
+    </ButtonGroup>
+  </CardFooter>
+</Card>
+<Card className="project-card" bg="#2B2A4C" my="2em" color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
+      initial="hidden">
+  <CardBody>
+    <Image
+      src="green-para.png"
+      alt='green'
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md' className="project-title">Green Paradise</Heading>
+      <Text className="project-description">
+      Online e-commerce platform for plants, 
+      to provide a seamless shopping experience 
+      for plant enthusiasts.
+    </Text>
+      <Flex className="project-tech-stack"
+ justify="space-around" my="2em" >
+     <Stack border="1px solid Black" align="center" p="0.3em" w={["30%","30%","30%","20%"]} boxShadow='dark-lg'>
+     <FaHtml5 fontSize="3.5em" />
+ <Text fontSize="1em">HTML</Text>
+     </Stack>
+     <Stack border="1px solid Black" align="center" p="0.3em" w={["30%","30%","30%","20%"]} boxShadow='dark-lg'>
+     <FaCss3Alt fontSize="3.5em"/>
+<Text fontSize="1em">Css</Text>
+
+   </Stack>
+     <Stack border="1px solid Black" align="center" p="0.3em"w={["30%","30%","30%","20%"]} boxShadow='dark-lg'>
+
+ <IoLogoJavascript fontSize="3.5em"/>
+ <Text fontSize="1em">jS</Text>
+
+ </Stack>
+</Flex>
+    </Stack>
+  </CardBody>
+  <Divider />
+  <CardFooter>
+    <ButtonGroup spacing='2'>
+    <Link href="https://github.com/Coders6754/Green-Paradise" className="project-github-link" isExternal> 
 
       <Button variant='solid' bg='#c1d37f' >
        Code
       </Button>
       </Link>
-      <Link href="https://650b2f84de1078243d876e0c--effervescent-tulumba-71b6b7.netlify.app/" isExternal>
+      <Link href="https://enchanting-klepon-de18e6.netlify.app/" isExternal>
 
       <Button variant='ghost' color='#c1d37f'>
        Live
@@ -176,6 +237,14 @@ spaces for categorizing tasks, including
   </CardFooter>
 </Card>
 </Flex >
+
+
+
+
+
+
+
+
 <Box py="3em">
 <Flex flexDir={["column","column","column","row"]} align={["space-between","space-between","center","center"]} justify="space-around">
         <Box p="1em" border="1px solid white"  my="2em" >
