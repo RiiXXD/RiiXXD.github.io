@@ -39,8 +39,8 @@ function showmenu(){
         <Link href="#skills" className="nav-link skills">Skills</Link>
         <Link href="#projects" className="nav-link projects">Projects</Link>
         <Link href="#contact" className="nav-link contact">Contact</Link>
-        <Link href="resume.pdf"  download>
-          <Button id="resume-button-1"  bg="#c1d37f">Resume</Button>
+        <Link href="Rishita-Dec-Resume.pdf"  id="resume-link-1" download >
+          <Button id="resume-button-1"  bg="#c1d37f"  >Resume</Button>
         </Link>
         </Flex>
         <Button bg="none" onClick={showmenu} display={["block","block","none","none"]}>
@@ -53,8 +53,8 @@ function showmenu(){
         <Link href="#skills" className="nav-link skills">Skills</Link>
         <Link href="#projects" className="nav-link projects">Projects</Link>
         <Link href="#contact" className="nav-link contact">Contact</Link>
-        <Link href="resume.pdf"  id="resume-link-1"  >
-          <Button id="resume-button-1"  bg="#c1d37f" onclick="window.open('https://drive.google.com/file/d/1UGr9lxIbJhuNBSeX4q8sZGYJUFgPIaFQ/view?usp=share_link')" download>Resume</Button>
+        <Link href="Rishita-Dec-Resume.pdf"  id="resume-link-1" download >
+          <Button id="resume-button-1"  bg="#c1d37f"  >Resume</Button>
         </Link>
         </Flex>
         {/* hey */}

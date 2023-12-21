@@ -176,7 +176,6 @@ spaces for categorizing tasks, including
   </CardFooter>
 </Card>
 </Flex >
-<Heading align="CENTER" textDecoration="underline" >My Git Stats</Heading>
 <Box py="3em">
 <Flex flexDir={["column","column","column","row"]} align={["space-between","space-between","center","center"]} justify="space-around">
         <Box p="1em" border="1px solid white"  my="2em" >
