@@ -63,7 +63,7 @@ spaces for categorizing tasks, including
   <Divider />
   <CardFooter>
     <ButtonGroup spacing='2'>
-      <Link href="https://github.com/RiiXXD/CheckMate" className="project-github-link" isExternal>
+      <Link href="https://github.com/RiiXXD/CheckMateTheTodos" className="project-github-link" isExternal>
       <Button variant='solid' bg="#c1d37f">
        Code
       </Button>

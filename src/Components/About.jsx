@@ -24,7 +24,7 @@ export default function About(){
 
             </Box>
             <Box align="center">
-<Image src="ProfilePic.png"/>
+<Image className="home-img" src="ProfilePic.png"/>
             </Box>
         </Flex>
     

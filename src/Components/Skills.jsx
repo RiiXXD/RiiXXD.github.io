@@ -35,11 +35,11 @@ const animation = `${animationKeyframes} 2s ease-in-out infinite`;
          animation={animation}></Image><Text className='skills-card-name'>javaScript</Text>
          </Stack>
          <Stack>
-         <Image src="css-3.png" w="70px" as={motion.img}
+         <Image src="css-3.png" w={["35px","50px","60px","70px"]} as={motion.img}
          animation={animation}></Image><Text className='skills-card-name' align="center">CSS</Text>
          </Stack>
          <Stack>
-         <Image className='skills-card-img' src="java.png" w="70px" as={motion.img}
+         <Image className='skills-card-img' src="java.png" w={["35px","50px","60px","70px"]} as={motion.img}
          animation={animation}></Image><Text className='skills-card-name' align="center">Java</Text>
          </Stack>
          <Stack>
@@ -53,39 +53,39 @@ const animation = `${animationKeyframes} 2s ease-in-out infinite`;
 </Flex>
 <Flex justify="center" gap="30px" align="flex-end">
   <Stack>
-         <Image className='skills-card-img' src="react.png" w="80px" as={motion.img}
+         <Image className='skills-card-img' src="react.png" w={["45px","60px","70px","80px"]}  as={motion.img}
          animation={animation}></Image><Text className='skills-card-name' align="center">React</Text>
          </Stack>
          <Stack>
-         <Image className='skills-card-img' src="redux.png" w="80px" as={motion.img}
+         <Image className='skills-card-img' src="redux.png"  w={["50px","60px","70px","80px"]} as={motion.img}
          animation={animation}></Image><Text className='skills-card-name'>Redux</Text>
          </Stack>
          <Stack>
-         <Image className='skills-card-img'src="chakra.png" w="75px" as={motion.img}
+         <Image className='skills-card-img'src="chakra.png"  w={["50px","55px","65px","75px"]} as={motion.img}
          animation={animation}></Image><Text className='skills-card-name'>Chakra</Text>
          </Stack>
          <Stack>
-         <Image className='skills-card-img' src="github.png" w="80px" as={motion.img}
+         <Image className='skills-card-img' src="github.png"  w={["45px","60px","70px","80px"]} as={motion.img}
          animation={animation}></Image><Text className='skills-card-name' align="center">Git</Text>
          </Stack>
         </Flex>
 <Flex justify="center" gap="30px" align="flex-end">
-  <Stack>
-         <Image className='skills-card-img' src="express.png" w="80px" as={motion.img}
+  <Stack align="center" >
+         <Image className='skills-card-img' src="express.png"  w={["60px","60px","70px","80px"]} as={motion.img}
          animation={animation}></Image><Text className='skills-card-name' align="center">Express js</Text>
          </Stack>
-         <Stack>
-         <Image className='skills-card-img' src="MongoDB.png" w="50px" as={motion.img}
-         animation={animation}></Image><Text className='skills-card-name'>MongoDB</Text>
+         <Stack align="center">
+         <Image className='skills-card-img' src="MongoDB.png" w={["35px","30px","40px","50px"]} as={motion.img}
+         animation={animation}></Image><Text align={["center", "center","center","center"]}className='skills-card-name'>MongoDB</Text>
          </Stack>
-         <Stack>
-         <Image className='skills-card-img' src="firebase.png" w="50px" as={motion.img}
+         <Stack align="center">
+         <Image className='skills-card-img' src="firebase.png" w={["35px","30px","40px","50px"]} as={motion.img}
          animation={animation}></Image><Text className='skills-card-name'>FireBase</Text>
          </Stack>
          </Flex>
          <Flex justify="center" gap="30px" align="flex-end">
   <Stack>
-         <Image className='skills-card-img' src="figma.png" w="70px" as={motion.img}
+         <Image className='skills-card-img' src="figma.png" w={["40px","50px","60px","70px"]} as={motion.img}
          animation={animation}></Image><Text className='skills-card-name' align="center">Figma</Text>
          </Stack>
          
