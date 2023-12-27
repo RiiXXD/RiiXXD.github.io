@@ -14,7 +14,7 @@ export default function About(){
     </Highlight>  
     </Text>
     <Flex  my="0.8em" justify="space-around" align="center">
-    <Link href="Rishita-Dec-Resume.pdf"  id="resume-link-2" download >
+    <Link href="Rishita-Resume.pdf"  id="resume-link-2" download >
           <Button id="resume-button-2"  bg="#c1d37f"  ><FaDownLong /> Resume</Button>
         </Link>
         <Link href="https://drive.google.com/file/d/1QMWUmh2oiNWyHZLM7MWlo5UPUCG4F0GE/view?usp=sharing" isExternal>

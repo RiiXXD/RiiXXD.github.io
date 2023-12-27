@@ -39,7 +39,7 @@ function showmenu(){
         <Link href="#skills" className="nav-link skills">Skills</Link>
         <Link href="#projects" className="nav-link projects">Projects</Link>
         <Link href="#contact" className="nav-link contact">Contact</Link>
-        <Link href="Rishita-Dec-Resume.pdf"  id="resume-link-1" download >
+        <Link href="Rishita-Resume.pdf"  id="resume-link-1" download >
           <Button id="resume-button-1"  bg="#c1d37f"  >Resume</Button>
         </Link>
         </Flex>
@@ -53,7 +53,7 @@ function showmenu(){
         <Link href="#skills" className="nav-link skills">Skills</Link>
         <Link href="#projects" className="nav-link projects">Projects</Link>
         <Link href="#contact" className="nav-link contact">Contact</Link>
-        <Link href="Rishita-Dec-Resume.pdf"  id="resume-link-1" download >
+        <Link href="Rishita-Resume.pdf"  id="resume-link-1" download >
           <Button id="resume-button-1"  bg="#c1d37f"  >Resume</Button>
         </Link>
         </Flex>

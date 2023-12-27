@@ -244,6 +244,7 @@ spaces for categorizing tasks, including
 
 
 
+<Heading as="h1"  fontSize={["2.5em","3em","5.5em","5.5em"]}fontWeight="700"> GitHub Stats</Heading>
 
 <Box py="3em">
 <Flex flexDir={["column","column","column","row"]} align={["space-between","space-between","center","center"]} justify="space-around">
@@ -255,7 +256,11 @@ spaces for categorizing tasks, including
         <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=riixxD&theme=dark&hide_border=true" alt="riixxD"  />
 
         </Box >
+       
         </Flex>
+        <Box  p="1em" border="1px solid white " align="center" my="2em" >
+        <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=riixxD&theme=dark&hide_border=true&layout=donut"alt="riixxD"  />
+        </Box >
         <Box p={["0.2em","0.5em","1em","2em"]} border="1px solid white" m="0 auto">
         <img src='https://ghchart.rshah.org/021F34/riixxD' alt='fdsdf' style={{ width: '100%', display: 'block', margin: 'auto' }}/>
 
