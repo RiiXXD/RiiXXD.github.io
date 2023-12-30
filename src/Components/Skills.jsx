@@ -18,7 +18,7 @@ const animation = `${animationKeyframes} 2s ease-in-out infinite`;
         {/* Skills cards */}
 
         {/* Example card */}
-        <Heading as="h1" fontSize={["2.5em","3em","5.5em"]} fontWeight="700">Skills </Heading>
+        <Heading as="h1" fontSize={["2.5em","3em","5.5em"]} color="#eb447f" fontWeight="700">Skills </Heading>
      
         <Box className="skills-card" w="100%" h="80%" >
         <Flex flexDir={["column-reverse","reverse-column","reverse-column","row"]} align="center" justify="space-around" p={["3em 0.5em","3em 0.5em","3em 0em","3em 0"]}>

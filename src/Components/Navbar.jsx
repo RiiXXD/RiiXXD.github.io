@@ -1,5 +1,5 @@
 import React ,{useState} from 'react';
-import {Box,Flex, Link,Button,keyframes } from "@chakra-ui/react";
+import {Box,Flex, Link,Button,keyframes ,Text} from "@chakra-ui/react";
 import { motion } from 'framer-motion';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
@@ -18,10 +18,10 @@ function showmenu(){
   console.log(show)
   setShow(!show)
 }
-   return <Box position="sticky" top="1em" left="0" zIndex="20">    
-        <Flex id="nav-menu" align="center"justifyContent="space-between" p="1em" bg="rgba(14,15,14,255)" border="1px solid #282120" color="#fab4b7" >
+   return <Box position="sticky" top="0" left="0" zIndex="20">    
+        <Flex id="nav-menu" align="center"justifyContent="space-between" p="1em" bg="rgba(14,15,14,255)" color="#fab4b7" >
         {/* Other Navbar links */}
-        <Box as={motion.div}
+        {/* <Box as={motion.div}
          animation={animation}
          // not work: transition={{ ... }}
          padding="2"
@@ -32,8 +32,9 @@ function showmenu(){
          display="flex"
          fontFamily="Raleway, sans-serif"
          fontSize="2.5em"
-         color="white" > ऋ</Box>
-         <Flex w="50%" display={["none","none","flex","flex"]} justify="space-between">
+         color="white" >Portfolio</Box> */}
+         <Text>Rishita Mukherjee</Text>
+         <Flex w={["","","60%","50%"]} display={["none","none","flex","flex"]} align="center" justify="space-between">
         <Link href="#home" className="nav-link home">Home</Link>
         <Link href="#about" className="nav-link about">About</Link>
         <Link href="#skills" className="nav-link skills">Skills</Link>

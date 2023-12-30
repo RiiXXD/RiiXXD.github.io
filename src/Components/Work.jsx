@@ -22,7 +22,7 @@ export default function Work(){
         }
       }, [controls, inView]);
     return <Box w="100%" id="projects"  >
-        <Heading as="h1"  fontSize={["2.5em","3em","5.5em","5.5em"]}fontWeight="700"> Projects</Heading>
+        <Heading as="h1"  fontSize={["2.5em","3em","5.5em","5.5em"]} color="#eb447f" fontWeight="700"> Projects</Heading>
         <Flex w="100%" flexWrap="wrap" justify="space-around" ref={ref} p="3em 0em" flexDir={["column","column","column","row"]} align={["center","center","center","center"]}>
 
 
@@ -244,7 +244,7 @@ spaces for categorizing tasks, including
 
 
 
-<Heading as="h1"  fontSize={["2.5em","3em","5.5em","5.5em"]}fontWeight="700"> GitHub Stats</Heading>
+<Heading as="h1"  fontSize={["2.5em","3em","5.5em","5.5em"]} color="#eb447f" fontWeight="700"> GitHub Stats</Heading>
 
 <Box py="3em">
 <Flex flexDir={["column","column","column","row"]} align={["space-between","space-between","center","center"]} justify="space-around">
