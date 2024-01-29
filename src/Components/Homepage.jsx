@@ -20,9 +20,16 @@ const rightAnimationKeyframes = keyframes`
 
 100% { transform: translateX(0%); }
 `;
+const headings = keyframes`
+0% { opacity:0; transform: translateY(5%);  }
+25% {opacity: 0; transform: translateY(4%);}
+50% {opacity: 0.7; transform: translateY(4%);}
+50% {opacity: 1; transform: translateY(3%);}
+100% { opacity: 1;transform: translateY(0%); }
+`;
 const animation = `${animationKeyframes} 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s`;
 const rightanimation = `${rightAnimationKeyframes} 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s`;
-
+const headingsanimation = `${headings} 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s`;
 const ref = useRef(null)
 const { scrollYProgress } = useScroll({
   target: ref,
@@ -57,9 +64,9 @@ const newScale = useTransform(scrollYProgress, [0, 1], [1, 5])
 <Image  src="mid-Up.png"></Image>
 </Box>
         <Flex flexDir="column" h="75%" align="center" justify="center" id="home">
-        <Heading   fontSize={["2em","3em","3em","5em"]} fontWeight="900" color="#eb447f">Rishita Mukherjee</Heading>
+        <Heading   fontSize={["2em","3em","3em","5em"]} fontWeight="900" color="#eb447f"  as={motion.div}  animation={headingsanimation}>Rishita Mukherjee</Heading>
 
-        <Heading  fontSize={["1em","1em","2em","2em"]} fontWeight="300"> I AM FULL STACK WEB DEVELOPER</Heading>
+        <Heading  fontSize={["1em","1em","2em","2em"]} fontWeight="300"  as={motion.div}  animation={headingsanimation}> I AM FULL STACK WEB DEVELOPER</Heading>
        </Flex>
 
 <Box position="absolute" left="10%" bottom="15%"  as={motion.div}  animation={animation}>

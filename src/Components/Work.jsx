@@ -20,6 +20,7 @@ export default function Work(){
         if (inView) {
           controls.start("visible");
         }
+        return () => controls.start("hidden");
       }, [controls, inView]);
     return <Box w="100%" id="projects"  >
         <Heading as="h1"  fontSize={["2.5em","3em","5.5em","5.5em"]} color="#eb447f" fontWeight="700"> Projects</Heading>

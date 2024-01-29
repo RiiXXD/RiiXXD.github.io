@@ -12,6 +12,14 @@ export default function Navbar(){
   75% { transform: scale(1) rotate(270deg); border-radius: 50%; }
   100% { transform: scale(1) rotate(0); border-radius: 20%; }
 `;
+const hamKeyframes = keyframes`
+0% { opacity:0; transform: translateX(50%);  }
+// 25% {zIndex=0; transform: translateX(35%);}
+// 50% {zIndex=0; transform: translateX(25%);}
+// 75% {zIndex=14; transform: translateX(15%);}
+100% {zIndex=14;transform: translateX(0%); }
+`;
+const animationhamKeyframes = `${hamKeyframes} 1s ease-in-out`;
 
 const animation = `${animationKeyframes} 2s ease-in-out`;
 function showmenu(){
@@ -35,7 +43,7 @@ function showmenu(){
          color="white" >Portfolio</Box> */}
          <Text>Rishita Mukherjee</Text>
          <Flex w={["","","60%","50%"]} display={["none","none","flex","flex"]} align="center" justify="space-between">
-        <Link href="#home" className="nav-link home">Home</Link>
+        <Link href="#home" className="nav-link home" >Home</Link>
         <Link href="#about" className="nav-link about">About</Link>
         <Link href="#skills" className="nav-link skills">Skills</Link>
         <Link href="#projects" className="nav-link projects">Projects</Link>
@@ -47,7 +55,7 @@ function showmenu(){
         <Button bg="none" onClick={showmenu} display={["block","block","none","none"]}>
  { show ? <IoCloseSharp fontSize="2em"  color="#c1d37f"/> : <GiHamburgerMenu fontSize="2em"  color="#c1d37f"/>}        </Button>
       </Flex>
-      <Box left="0em"w="100%" h="100vh" bg="black"  position="absolute" zIndex="14" display={show?"block":"none"} >
+      <Box left="0em"w={["100%","100%","100%","0%"]} h="50vh" bg="black" as={motion.div}  animation={animationhamKeyframes}  position="absolute"  display={[show?"block":"none",show?"block":"none",show?"block":"none","none"]} >
       <Flex flexDir="column" w="100%" fontSize="2em" p="1em" justify="center"  align="center" color="white" zIndex="16">
         <Link href="#home" className="nav-link home">Home</Link>
         <Link href="#about" className="nav-link about">About</Link>

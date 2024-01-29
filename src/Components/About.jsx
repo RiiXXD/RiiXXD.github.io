@@ -17,9 +17,12 @@ export default function About(){
     <Link href="Rishita-Resume.pdf"  id="resume-link-2" download >
           <Button id="resume-button-2"  bg="#c1d37f"  ><FaDownLong /> Resume</Button>
         </Link>
-        <Link href="https://drive.google.com/file/d/1QMWUmh2oiNWyHZLM7MWlo5UPUCG4F0GE/view?usp=sharing" isExternal>
-          <Button id="resume-button-2"  bg="#c1d37f"  ><GrView /> Resume</Button>
-        </Link>
+        <Link href="https://drive.google.com/file/d/1QMWUmh2oiNWyHZLM7MWlo5UPUCG4F0GE/view?usp=sharing&export=download"   isExternal>
+             {/* <Link href="Rishita-Resume.pdf"  id="resume-link-2" download > */}
+ <Button id="resume-button-2"  bg="#c1d37f"  ><GrView /> Resume</Button>
+        {/* </Link> */}
+        
+       </Link>
     </Flex>
 
             </Box>
