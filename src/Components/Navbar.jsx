@@ -49,13 +49,13 @@ function showmenu(){
         <Link href="#projects" className="nav-link projects">Projects</Link>
         <Link href="#contact" className="nav-link contact">Contact</Link>
         <Link href="Rishita-Resume.pdf"  id="resume-link-1" download >
-          <Button id="resume-button-1"  bg="#c1d37f"  >Resume</Button>
+          <Button id="resume-button-1" bg="#c1d37f">Resume</Button>
         </Link>
         </Flex>
         <Button bg="none" onClick={showmenu} display={["block","block","none","none"]}>
  { show ? <IoCloseSharp fontSize="2em"  color="#c1d37f"/> : <GiHamburgerMenu fontSize="2em"  color="#c1d37f"/>}        </Button>
       </Flex>
-      <Box left="0em"w={["100%","100%","100%","0%"]} h="50vh" bg="black" as={motion.div}  animation={animationhamKeyframes}  position="absolute"  display={[show?"block":"none",show?"block":"none",show?"block":"none","none"]} >
+      <Box left="0em" w={["100%","100%","100%","0%"]} h="50vh" bg="black" as={motion.div}  animation={animationhamKeyframes}  position="absolute"  display={[show?"block":"none",show?"block":"none",show?"block":"none","none"]} >
       <Flex flexDir="column" w="100%" fontSize="2em" p="1em" justify="center"  align="center" color="white" zIndex="16">
         <Link href="#home" className="nav-link home">Home</Link>
         <Link href="#about" className="nav-link about">About</Link>
