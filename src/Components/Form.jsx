@@ -34,14 +34,14 @@ export default function Form(){
     // </form>
 <FormControl ref={form} onSubmit={sendEmail} w="100%" h="100%" >
   <FormLabel   mt={4} color="white">Name</FormLabel>
-  <Input type='email'  name="from_name"   mt={5}/>
+  <Input type='email'  name="from_name" color="white"   mt={5}/>
 
   <FormLabel   mt={4} color="white">Email address</FormLabel>
-  <Input   mt={4} type='email'  name="from_email"/>
+  <Input   mt={4} type='email' color="white" name="from_email"/>
 
   <FormLabel   mt={4} color="white">Message</FormLabel>
-  <Textarea   mt={4} placeholder='Enter your message' name="message" />
-  <Input type="submit"  color="#FF004D" value="Send"   mt={2}/>
+  <Textarea   mt={4} color="white" placeholder='Enter your message' name="message" />
+  <Input type="submit" color="#FF004D" value="Send"   mt={2}/>
 
 </FormControl>
   );
