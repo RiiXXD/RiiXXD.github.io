@@ -22,7 +22,7 @@ export default function About(){
     </Box>
     <Box align="center">
         <Image className="home-img" src="PPIC.png"/>
-        <Link href="Rishita-Resume.pdf"  id="resume-link-2" download>
+        <Link href="Rishita-Mukherjee-Resume.pdf"  id="resume-link-2" download>
       <Button id="resume-button-2"  bg="#c1d37f" onClick={()=>{window.open('https://drive.google.com/file/d/1QMWUmh2oiNWyHZLM7MWlo5UPUCG4F0GE/view?usp=sharing&export=download"')}} > Checkout Resume <FaArrowRightLong /></Button>
     </Link>
     </Box>

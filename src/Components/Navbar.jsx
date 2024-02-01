@@ -25,8 +25,8 @@ function showmenu(){
         <Link href="#skills" className="nav-link skills">Skills</Link>
         <Link href="#projects" className="nav-link projects">Projects</Link>
         <Link href="#contact" className="nav-link contact">Contact</Link>
-        <Link href="Rishita-Resume.pdf"  id="resume-link-1" download >
-          <Button id="resume-button-1" bg="#c1d37f">Resume</Button>
+        <Link href="Rishita-Mukherjee-Resume.pdf"  id="resume-link-1" download >
+          <Button id="resume-button-1" bg="#c1d37f" onClick={()=>{window.open('https://drive.google.com/file/d/1QMWUmh2oiNWyHZLM7MWlo5UPUCG4F0GE/view?usp=sharing&export=download"')}}>Resume</Button>
         </Link>
         </Flex>
         <Button bg="none" onClick={showmenu} display={["block","block","none","none"]}>
@@ -39,8 +39,8 @@ function showmenu(){
         <Link href="#skills" className="nav-link skills">Skills</Link>
         <Link href="#projects" className="nav-link projects">Projects</Link>
         <Link href="#contact" className="nav-link contact">Contact</Link>
-        <Link href="Rishita-Resume.pdf"  id="resume-link-1" download >
-          <Button id="resume-button-1"  bg="#c1d37f"  >Resume</Button>
+        <Link href="Rishita-Mukherjee-Resume.pdf"  id="resume-link-1" download >
+          <Button id="resume-button-1"  bg="#c1d37f" onClick={()=>{window.open('https://drive.google.com/file/d/1QMWUmh2oiNWyHZLM7MWlo5UPUCG4F0GE/view?usp=sharing&export=download"')}} >Resume</Button>
         </Link>
         </Flex>
       </Box>

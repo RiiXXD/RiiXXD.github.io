@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 export default function Contact(){
-    return <Box bg="#FF004D" w="100%" h="85vh" p="1em 0.5em">
+    return <Box bg="#FF004D" w="100%" h="85vh" p="1em 0.5em" id="contact">
     <Flex w="100%" h="100%" align="center" justify="center" >
         <Box w="40%" h="100%" display={["none","none","block","block"]} >
          <Box w="100%" h="100%" bg="rgba(14,15,14,255)"  overflow={"hidden"}  boxShadow='md'  >
