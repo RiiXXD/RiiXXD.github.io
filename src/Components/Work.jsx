@@ -2,9 +2,9 @@
 
 import {  Box, Flex, Link, Stack,Text, Button, Image, Heading } from "@chakra-ui/react";
 import { Card, Divider, ButtonGroup,CardBody, CardFooter } from '@chakra-ui/react'
-import { FaHtml5, FaCss3Alt ,FaReact} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt ,FaReact,FaNodeJs} from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiRedux ,SiFirebase} from "react-icons/si";
+import { SiRedux ,SiFirebase,SiMongodb,SiExpress} from "react-icons/si";
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -31,6 +31,59 @@ export default function Work(){
 
 
 
+<Card className="project-card" bg="#114232"  color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
+      initial="hidden">
+  <CardBody>
+    <Image
+      src="FoodRecipe.png"
+      alt='foodrecipe'
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md' className="project-title">The RecipeBook</Heading>
+      <Text className="project-description">
+      A Fullstack project using MERN tech stack. The RecipeBook, where coding meets cooking.Its a CRUD application. With user dashboard where one can find,create ,update ,share and print any recipe.
+      </Text>
+      <Flex className="project-tech-stack" justify="space-around" my="2em" >
+    
+    <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+    <SiMongodb fontSize="3.5em"/>
+<Text fontSize="1em">Mongodb</Text>
+
+    </Stack>
+    <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+    <SiExpress fontSize="3.5em"  />
+<Text fontSize="1em">Express</Text>
+    </Stack>
+    <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+    <FaReact fontSize="3.5em"  />
+<Text fontSize="1em">React</Text>
+    </Stack>
+    <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+    <FaNodeJs fontSize="3.5em"  />
+<Text fontSize="1em">Node js</Text>
+    </Stack>
+    </Flex>
+    </Stack>
+  </CardBody>
+  <Divider />
+  <CardFooter>
+    <ButtonGroup spacing='2'>
+      <Link href="https://github.com/RiiXXD/TheRecipe" className="project-github-link" isExternal>
+      <Button variant='solid' bg="#c1d37f">
+       Code
+      </Button>
+      </Link>
+      <Link href="https://661e9d44763d8938f97ec9ff--incredible-semolina-11e933.netlify.app/" className="project-deployed-link" isExternal>
+
+      <Button variant='ghost' color="#c1d37f">
+       Live
+      </Button>
+      </Link>
+
+    </ButtonGroup>
+  </CardFooter>
+</Card>
 <Card className="project-card" bg="#a61c3c"  color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
       initial="hidden">
   <CardBody>

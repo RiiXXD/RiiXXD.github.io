@@ -4,7 +4,7 @@ import Form from './Form';
 import {  Box, Flex, Link, Text, Button, Image, Heading ,Spacer} from "@chakra-ui/react";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt,FaWhatsapp } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 export default function Contact(){
     return <Box bg="#FF004D" w="100%" h="85vh" p="1em 0.5em" id="contact">
@@ -37,8 +37,9 @@ function ContactLinks(){
     <Link align="center" id="contact-github" href="https://github.com/riixxd" target="_blank"><FaGithub fontSize={["15px","15px","25px","25px"]} /></Link>
     
     <Link href="mailto:thereforme06@gmail.com" align="center" id="contact-email"><IoIosMail fontSize={["25px","25px","30px","30px"]}/></Link>
-    <Flex align="center" id="contact-phone" color="#FF004D"><FaPhoneAlt color="#FF004D" fontSize={["15px","15px","20px","20px"]} />
-    <Text mx="0.5em" fontSize={["15px","15px","20px","20px"]} >9310270376</Text></Flex>
+    <Flex align="center" id="contact-phone" color="#FF004D">
+    <a href="tel:+919310270376" mx="0.5em" fontSize={["15px","15px","20px","20px"]} ><FaPhoneAlt color="#FF004D" fontSize={["15px","15px","20px","20px"]} /></a></Flex>
+    <a href="https://wa.me/9310270376" mx="0.5em" fontSize={["15px","15px","20px","20px"]} ><FaWhatsapp color="#FF004D" fontSize={["15px","15px","20px","20px"]} /></a>
 
     </Flex>
       
