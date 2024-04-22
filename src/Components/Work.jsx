@@ -31,7 +31,7 @@ export default function Work(){
 
 
 
-<Card className="project-card" bg="#114232"  color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
+<Card className="project-card" bg="#114232" my="2em"  color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
       initial="hidden">
   <CardBody>
     <Image
@@ -44,22 +44,22 @@ export default function Work(){
       <Text className="project-description">
       A Fullstack project using MERN tech stack. The RecipeBook, where coding meets cooking.Its a CRUD application. With user dashboard where one can find,create ,update ,share and print any recipe.
       </Text>
-      <Flex className="project-tech-stack" justify="space-around" my="2em" >
+      <Flex className="project-tech-stack" justify="space-around" my="2em" flexBasis={"2"} flexWrap={"wrap"}>
     
-    <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+    <Stack border="1px solid Black" mb={["0.3em","0.3em","0","0"]} align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
     <SiMongodb fontSize="3.5em"/>
 <Text fontSize="1em">Mongodb</Text>
 
     </Stack>
-    <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+    <Stack border="1px solid Black" align="center"  mb={["0.3em","0.3em","0","0"]} p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
     <SiExpress fontSize="3.5em"  />
 <Text fontSize="1em">Express</Text>
     </Stack>
-    <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+    <Stack border="1px solid Black" align="center" p="0.3em" mb={["0.3em","0.3em","0","0"]} w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
     <FaReact fontSize="3.5em"  />
 <Text fontSize="1em">React</Text>
     </Stack>
-    <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+    <Stack border="1px solid Black" align="center" p="0.3em" mb={["0.3em","0.3em","0","0"]} w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
     <FaNodeJs fontSize="3.5em"  />
 <Text fontSize="1em">Node js</Text>
     </Stack>
@@ -84,7 +84,7 @@ export default function Work(){
     </ButtonGroup>
   </CardFooter>
 </Card>
-<Card className="project-card" bg="#a61c3c"  color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
+<Card  my="2em" className="project-card" bg="#a61c3c"  color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
       initial="hidden">
   <CardBody>
     <Image
@@ -97,8 +97,8 @@ export default function Work(){
       <Text className="project-description">
       visually appealing user interface.
 Incorporated user authentication for
-secure access. Implemented distinct
-spaces for categorizing tasks, including
+secure access.Implemented distinct
+spaces for categorizing tasks,including
 'Personal' and 'Work' sections.
       </Text>
       <Flex className="project-tech-stack" justify="space-around" my="2em" >
@@ -132,56 +132,7 @@ spaces for categorizing tasks, including
     </ButtonGroup>
   </CardFooter>
 </Card>
-<Card className="project-card" bg="#5b2aec" my="2em" color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
-      initial="hidden">
-  <CardBody>
-    <Image
-      src="GemGarden1.png"
-      alt='gem-garden'
-      borderRadius='lg'
-    />
-    <Stack mt='6' spacing='3'>
-      <Heading size='md' className="project-title">Gem-Garden</Heading>
-      <Text className="project-description">
-      Explore the exquisite world 
-      of Gem Garden, an online jewelry
-       website where you can effortlessly
-        purchase the jewelry of your choice 
-        from the comfort of your home.
-        Visit now.
-      </Text>
-      <Flex className="project-tech-stack" justify="space-around" my="2em" >
-     <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
-     <FaReact fontSize="3.5em" />
- <Text fontSize="1em">React</Text>
- </Stack>
- <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
-<SiRedux fontSize="3.5em"/>
-<Text fontSize="1em">Redux</Text>
 
-   </Stack>
-    
-</Flex>
-    </Stack>
-  </CardBody>
-  <Divider />
-  <CardFooter>
-    <ButtonGroup spacing='2'>
-    <Link href="https://github.com/Saurav9284/Unite-6-Project-Gem-Garden" className="project-github-link" isExternal>
-
-      <Button variant='solid' bg="#c1d37f" >
-       Code
-      </Button>
-      </Link>
-      <Link href="https://saurav01gemgarden.netlify.app" className="project-deployed-link" isExternal>
-
-      <Button variant='ghost' color="#c1d37f">
-       Live
-      </Button>
-      </Link>
-    </ButtonGroup>
-  </CardFooter>
-</Card>
 <Card  bg="#b0228c" my="2em" color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
    className="project-card"   initial="hidden">
   <CardBody>
@@ -284,6 +235,56 @@ spaces for categorizing tasks, including
       <Link href="https://enchanting-klepon-de18e6.netlify.app/" isExternal>
 
       <Button variant='ghost' color='#c1d37f'>
+       Live
+      </Button>
+      </Link>
+    </ButtonGroup>
+  </CardFooter>
+</Card>
+<Card className="project-card" bg="#5b2aec" my="2em" color="wheat" as={motion.div} maxW='lg'  variants={squareVariants}  animate={controls}
+      initial="hidden">
+  <CardBody>
+    <Image
+      src="GemGarden1.png"
+      alt='gem-garden'
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md' className="project-title">Gem-Garden</Heading>
+      <Text className="project-description">
+      Explore the exquisite world 
+      of Gem Garden, an online jewelry
+       website where you can effortlessly
+        purchase the jewelry of your choice 
+        from the comfort of your home.
+        Visit now.
+      </Text>
+      <Flex className="project-tech-stack" justify="space-around" my="2em" >
+     <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+     <FaReact fontSize="3.5em" />
+ <Text fontSize="1em">React</Text>
+ </Stack>
+ <Stack border="1px solid Black" align="center" p="0.3em" w={["35%","30%","30%","20%"]} boxShadow='dark-lg'>
+<SiRedux fontSize="3.5em"/>
+<Text fontSize="1em">Redux</Text>
+
+   </Stack>
+    
+</Flex>
+    </Stack>
+  </CardBody>
+  <Divider />
+  <CardFooter>
+    <ButtonGroup spacing='2'>
+    <Link href="https://github.com/Saurav9284/Unite-6-Project-Gem-Garden" className="project-github-link" isExternal>
+
+      <Button variant='solid' bg="#c1d37f" >
+       Code
+      </Button>
+      </Link>
+      <Link href="https://saurav01gemgarden.netlify.app" className="project-deployed-link" isExternal>
+
+      <Button variant='ghost' color="#c1d37f">
        Live
       </Button>
       </Link>
